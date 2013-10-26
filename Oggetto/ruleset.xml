@@ -56,4 +56,5 @@
     <rule ref="Squiz.Commenting.DocCommentAlignment"/>
     <rule ref="Oggetto.Commenting.FunctionComment"/>
     <rule ref="Oggetto.Strings.ConcatenationSpacing"/>
+    <rule ref="Oggetto.Files.OnlyValidCharactersInName"/>
 </ruleset>
