@@ -43,7 +43,6 @@ class Oggetto_Sniffs_Files_OnlyValidCharactersInNameSniff implements PHP_CodeSni
         $fileName = $phpcsFile->getFileName();
 
         //get file name without extension '.php'
-        
         $arrCatalogs = explode('\\', $fileName);
         $fileNameSubstrs = explode('.', end($arrCatalogs));
         $fileName = join('.', array_slice( $fileNameSubstrs, 0, count($fileNameSubstrs) - 1 ) );
