@@ -42,25 +42,8 @@ class Oggetto_Sniffs_Files_OnlyValidCharactersInNameSniff implements PHP_CodeSni
     {
         $fileName = $phpcsFile->getFileName();
 
-        //get file name without extension '.php'
-        $arrCatalogs = explode('\\', $fileName);
-        $fileNameSubstrs = explode('.', end($arrCatalogs));
-        $fileName = join('.', array_slice( $fileNameSubstrs, 0, count($fileNameSubstrs) - 1 ) );
-
-        //file name is gotten
-
-        $lowerLetters = range('a', 'z');
-        $upperLetters = range('A', 'Z');
-        $nums = range('0', '9');
-
-        for ($i = 0; $i < strlen($fileName); $i++) { 
-            $char = $fileName[$i];
-
-            if (!(in_array(ord($char) - ord('0'), $nums) || in_array($char, $lowerLetters) ||
-                in_array($char, $upperLetters) || $char == '-' || $char == '_')) {
-                $phpcsFile->addError("Character '%s' should not be used in file name", 
-                    $stackPtr, 'Found', $fileName[$i]);
-            }
+        if (!preg_match("/^(\w|\/|\-)+\.php$/", $fileName)) {
+            $phpcsFile->addError("Invalid file name", $stackPtr, 'Error');
         }
     }
 }
