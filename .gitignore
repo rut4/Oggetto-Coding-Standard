@@ -1,1 +1,7 @@
 .DS_Store
+.vagrant/
+Vagrantfile
+composer.lock
+composer.phar
+tests/
+vendor/
