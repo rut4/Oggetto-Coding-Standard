@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 /**
@@ -57,4 +58,8 @@
     <rule ref="Oggetto.Commenting.FunctionComment"/>
     <rule ref="Oggetto.Strings.ConcatenationSpacing"/>
     <rule ref="Oggetto.Files.OnlyValidCharactersInName"/>
+
+    <rule ref="Oggetto.Functions.FunctionWhiteSpace"/>
+    <rule ref="Oggetto.Arrays.ArrayNegativeIndex"/>
+    <rule ref="Oggetto.File.OnlyEnglish"/>
 </ruleset>
