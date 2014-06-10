@@ -63,4 +63,5 @@
     <rule ref="Oggetto.DontUseVar.DontUseVar"/>
     <rule ref="Oggetto.ReturnWithoutParentheses.ReturnWithoutParentheses"/>
     <rule ref="Oggetto.Files.OnlyValidCharactersInName"/>
+    <rule ref="Oggetto.Functions.FunctionProtectedPrivateUndreline"/>
 </ruleset>
