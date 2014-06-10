@@ -56,8 +56,11 @@
     <rule ref="Squiz.Commenting.DocCommentAlignment"/>
     <rule ref="Oggetto.Commenting.FunctionComment"/>
     <rule ref="Oggetto.Strings.ConcatenationSpacing"/>
-    <rule ref="Oggetto.Files.OnlyValidCharactersInName"/>
     <rule ref="Oggetto.Functions.FunctionWhiteSpace"/>
     <rule ref="Oggetto.Arrays.ArrayNegativeIndex"/>
     <rule ref="Oggetto.File.OnlyEnglish"/>
+    <rule ref="Oggetto.Functions.FunctionNames"/>
+    <rule ref="Oggetto.DontUseVar.DontUseVar"/>
+    <rule ref="Oggetto.ReturnWithoutParentheses.ReturnWithoutParentheses"/>
+    <rule ref="Oggetto.Files.OnlyValidCharactersInName"/>
 </ruleset>
