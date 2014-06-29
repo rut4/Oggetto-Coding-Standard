@@ -42,8 +42,8 @@ class Oggetto_Sniffs_Files_OnlyValidCharactersInNameSniff implements PHP_CodeSni
     {
         $fileName = $phpcsFile->getFileName();
 
-        if (!preg_match("/^(\w|\/|\-)+\.php$/", $fileName)) {
-            $phpcsFile->addError("Invalid file name", $stackPtr, 'Error');
+        if (!preg_match("/^(\w|\/|\-)*(\w|\-)+\.php$/", $fileName)) {
+            $phpcsFile->addError('Invalid file name', $stackPtr, 'Error');
         }
     }
 }
